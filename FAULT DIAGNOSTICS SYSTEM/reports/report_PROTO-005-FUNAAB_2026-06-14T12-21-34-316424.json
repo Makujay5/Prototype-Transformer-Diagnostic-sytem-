@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-06-14T12:21:34.316424",
+  "transformer_id": "PROTO-005-FUNAAB",
+  "fault_code": 4,
+  "fault_name": "Voltage_Fault",
+  "severity": "HIGH",
+  "confidence_pct": 100.0,
+  "class_probabilities": {
+    "Normal": 0.0,
+    "Overheating": 0.0,
+    "Low_Oil_Level": 0.0,
+    "Overcurrent_Short_Circuit": 0.0,
+    "Voltage_Fault": 100.0
+  },
+  "threshold_violations": [
+    {
+      "param": "v_primary_V",
+      "value": 261.0,
+      "level": "WARNING",
+      "threshold": 253
+    },
+    {
+      "param": "v_secondary_V",
+      "value": 14.1,
+      "level": "WARNING",
+      "threshold": 13.5
+    }
+  ],
+  "recommended_actions": [
+    "WARNING: Input voltage outside safe operating range.",
+    "Measure mains supply with a calibrated voltmeter.",
+    "If overvoltage: disconnect transformer from mains \u2014 insulation may be at risk.",
+    "If undervoltage: check supply source and connections.",
+    "Consider using a voltage stabiliser on the input supply."
+  ],
+  "computed_features": {
+    "v_primary_V": 261.0,
+    "v_secondary_V": 14.1,
+    "i_load_A": 3.2,
+    "temp_oil_C": 46.0,
+    "temp_winding_C": 60.0,
+    "temp_ambient_C": 32.0,
+    "oil_level_pct": 85.0,
+    "v_ratio_dev_pct": 3.544,
+    "load_pct": 16.0,
+    "delta_temp_C": 14.0,
+    "apparent_power_VA": 45.12
+  }
+}

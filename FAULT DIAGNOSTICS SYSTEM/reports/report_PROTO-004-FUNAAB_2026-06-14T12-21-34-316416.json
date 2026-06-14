@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-06-14T12:21:34.316416",
+  "transformer_id": "PROTO-004-FUNAAB",
+  "fault_code": 3,
+  "fault_name": "Overcurrent_Short_Circuit",
+  "severity": "CRITICAL",
+  "confidence_pct": 100.0,
+  "class_probabilities": {
+    "Normal": 0.0,
+    "Overheating": 0.0,
+    "Low_Oil_Level": 0.0,
+    "Overcurrent_Short_Circuit": 100.0,
+    "Voltage_Fault": 0.0
+  },
+  "threshold_violations": [
+    {
+      "param": "temp_winding_C",
+      "value": 88.0,
+      "level": "WARNING",
+      "threshold": 75
+    },
+    {
+      "param": "temp_oil_C",
+      "value": 65.0,
+      "level": "WARNING",
+      "threshold": 62
+    },
+    {
+      "param": "i_load_A",
+      "value": 17.5,
+      "level": "WARNING",
+      "threshold": 15.0
+    },
+    {
+      "param": "v_ratio_dev_pct",
+      "value": 30.465,
+      "level": "CRITICAL",
+      "threshold": 10.0
+    },
+    {
+      "param": "load_pct",
+      "value": 87.5,
+      "level": "WARNING",
+      "threshold": 75.0
+    }
+  ],
+  "recommended_actions": [
+    "CRITICAL: Overcurrent or short circuit detected \u2014 disconnect load immediately.",
+    "Check connected load for short circuits before restarting.",
+    "Inspect secondary winding terminals for signs of arcing or burn marks.",
+    "Verify fuse/circuit breaker has not blown.",
+    "Do NOT restart until fault cause is identified and cleared."
+  ],
+  "computed_features": {
+    "v_primary_V": 215.0,
+    "v_secondary_V": 7.8,
+    "i_load_A": 17.5,
+    "temp_oil_C": 65.0,
+    "temp_winding_C": 88.0,
+    "temp_ambient_C": 32.0,
+    "oil_level_pct": 84.0,
+    "v_ratio_dev_pct": 30.465,
+    "load_pct": 87.5,
+    "delta_temp_C": 23.0,
+    "apparent_power_VA": 136.5
+  }
+}

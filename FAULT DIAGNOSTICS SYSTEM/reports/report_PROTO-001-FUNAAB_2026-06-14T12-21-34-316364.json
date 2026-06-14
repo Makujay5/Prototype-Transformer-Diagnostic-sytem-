@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-06-14T12:21:34.316364",
+  "transformer_id": "PROTO-001-FUNAAB",
+  "fault_code": 0,
+  "fault_name": "Normal",
+  "severity": "INFO",
+  "confidence_pct": 99.5,
+  "class_probabilities": {
+    "Normal": 99.5,
+    "Overheating": 0.0,
+    "Low_Oil_Level": 0.0,
+    "Overcurrent_Short_Circuit": 0.0,
+    "Voltage_Fault": 0.5
+  },
+  "threshold_violations": [],
+  "recommended_actions": [
+    "Prototype operating normally.",
+    "Continue logging data. Schedule next inspection."
+  ],
+  "computed_features": {
+    "v_primary_V": 229.5,
+    "v_secondary_V": 11.9,
+    "i_load_A": 2.8,
+    "temp_oil_C": 42.0,
+    "temp_winding_C": 55.0,
+    "temp_ambient_C": 31.0,
+    "oil_level_pct": 85.0,
+    "v_ratio_dev_pct": 0.617,
+    "load_pct": 14.0,
+    "delta_temp_C": 13.0,
+    "apparent_power_VA": 33.32
+  }
+}

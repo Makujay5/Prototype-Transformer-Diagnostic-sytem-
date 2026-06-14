@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-06-14T12:21:34.316395",
+  "transformer_id": "PROTO-002-FUNAAB",
+  "fault_code": 1,
+  "fault_name": "Overheating",
+  "severity": "CRITICAL",
+  "confidence_pct": 100.0,
+  "class_probabilities": {
+    "Normal": 0.0,
+    "Overheating": 100.0,
+    "Low_Oil_Level": 0.0,
+    "Overcurrent_Short_Circuit": 0.0,
+    "Voltage_Fault": 0.0
+  },
+  "threshold_violations": [
+    {
+      "param": "temp_winding_C",
+      "value": 96.0,
+      "level": "CRITICAL",
+      "threshold": 90
+    },
+    {
+      "param": "temp_oil_C",
+      "value": 74.0,
+      "level": "WARNING",
+      "threshold": 62
+    }
+  ],
+  "recommended_actions": [
+    "CRITICAL: Switch off prototype transformer immediately.",
+    "Allow transformer to cool for at least 30 minutes before restart.",
+    "Check ventilation around the enclosure \u2014 ensure airflow is not blocked.",
+    "Check load \u2014 reduce connected load below 60% of rated.",
+    "Inspect winding insulation after cooling."
+  ],
+  "computed_features": {
+    "v_primary_V": 231.0,
+    "v_secondary_V": 11.7,
+    "i_load_A": 6.5,
+    "temp_oil_C": 74.0,
+    "temp_winding_C": 96.0,
+    "temp_ambient_C": 35.0,
+    "oil_level_pct": 82.0,
+    "v_ratio_dev_pct": 2.922,
+    "load_pct": 32.5,
+    "delta_temp_C": 22.0,
+    "apparent_power_VA": 76.05
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-06-14T12:21:34.316407",
+  "transformer_id": "PROTO-003-FUNAAB",
+  "fault_code": 2,
+  "fault_name": "Low_Oil_Level",
+  "severity": "HIGH",
+  "confidence_pct": 100.0,
+  "class_probabilities": {
+    "Normal": 0.0,
+    "Overheating": 0.0,
+    "Low_Oil_Level": 100.0,
+    "Overcurrent_Short_Circuit": 0.0,
+    "Voltage_Fault": 0.0
+  },
+  "threshold_violations": [
+    {
+      "param": "oil_level_pct",
+      "value": 38.0,
+      "level": "CRITICAL",
+      "threshold": 45
+    }
+  ],
+  "recommended_actions": [
+    "WARNING: Oil level is low \u2014 insulation and cooling at risk.",
+    "Top up oil in prototype tank to the marked fill level.",
+    "Inspect tank seals and container for visible leakage.",
+    "Do not run transformer continuously until oil level is restored."
+  ],
+  "computed_features": {
+    "v_primary_V": 230.0,
+    "v_secondary_V": 12.0,
+    "i_load_A": 3.0,
+    "temp_oil_C": 56.0,
+    "temp_winding_C": 68.0,
+    "temp_ambient_C": 32.0,
+    "oil_level_pct": 38.0,
+    "v_ratio_dev_pct": 0.0,
+    "load_pct": 15.0,
+    "delta_temp_C": 12.0,
+    "apparent_power_VA": 36.0
+  }
+}
